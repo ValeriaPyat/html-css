@@ -1,0 +1,210 @@
+body {
+    font-family: Avenir Next, sans-serif;
+    background: url(imgs/back.png) no-repeat fixed;
+    background-size: cover;
+}
+
+.main-box {
+    width: 615px;
+    height: 410px;
+    display: grid;
+    display: -ms-grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr 1fr;
+    color: white;
+    text-shadow: 1px 1px 2px grey;
+    text-transform: uppercase;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+.main-box__cube {
+    width: 205px;
+    height: 205px;
+    text-align: center;
+}
+
+.main-box__cube_img {
+    margin: 45px 0 10px 0;
+    filter: drop-shadow(1px 1px 1px grey);
+}
+
+.chicago img {
+    width: 90px;
+    height: 76px;
+}
+.seattle img {
+    width: 81px;
+    height: 74px;
+}
+.brooklyn img {
+    width: 87px;
+    height: 77px;
+}
+.portland img {
+    width: 86px;
+    height: 88px;
+}
+.sanjose img {
+    width: 88px;
+    height: 64px;
+    margin-bottom: 32px;
+}
+
+.week_gen img {
+    margin-top: 25px;
+    width: 63px;
+    height: 65px;
+}
+
+.week-info {
+    padding: 18px 0;
+}
+
+.week_smallimgs img {
+    width: 23px;
+    height: 20px;
+    margin: 12px 9px 0;
+}
+
+.week_smallimgs img:nth-child(3) {
+    width: 24px;
+    height: 18px;
+}
+
+.main-box__cube_text {
+    font-size: 16px;
+}
+
+.week_days__text {
+    font-size: 12px;
+    font-weight: bold;
+    display: inline;
+    margin: 0 8px;
+}
+
+.week_degreese p {
+    margin: 0 11px;
+}
+
+.chicago {
+    background-color: #06b3db;
+    -ms-grid-column: 1;
+    -ms-grid-row: 1;
+}
+.seattle {
+    background-color: #4ed486;
+    -ms-grid-column: 2;
+    -ms-grid-row: 1;
+}
+.brooklyn {
+    background-color: #6139f6;
+    -ms-grid-column: 3;
+    -ms-grid-row: 1;
+}
+.portland {
+    background-color: #e3b63d;
+    -ms-grid-column: 1;
+    -ms-grid-row: 2;
+}
+.week {
+    background-color: #b03153;
+    -ms-grid-column: 2;
+    -ms-grid-row: 2;
+}
+.week_gen {
+    background-color: #dc3d66;
+    height: 105px;
+}
+.sanjose {
+    background-color: #bd54cd;
+    -ms-grid-column: 3;
+    -ms-grid-row: 2;
+}
+
+@media screen and (max-width: 800px) and (min-width: 637px){
+    .main-box {
+        width: 615px;
+        height: 410px;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 636px) {
+    .main-box {
+        width: 410px;
+        height: 615px;
+        margin: 50px auto;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        -ms-grid-rows: 1fr 1fr 1fr;
+        -ms-grid-columns: 1fr 1fr;
+    }
+    .chicago {
+        -ms-grid-column: 1;
+        -ms-grid-row: 1;
+    }
+    .seattle {
+        -ms-grid-column: 1;
+        -ms-grid-row: 2;
+    }
+    .brooklyn {
+        -ms-grid-column: 1;
+        -ms-grid-row: 3;
+    }
+    .portland {
+        -ms-grid-column: 2;
+        -ms-grid-row: 1;
+    }
+    .week {
+        -ms-grid-column: 2;
+        -ms-grid-row: 2;
+    }
+    .sanjose {
+        -ms-grid-column: 2;
+        -ms-grid-row: 3;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .main-box {
+        width: 205px;
+        height: auto;
+        position: relative;
+        margin: 50px auto;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-columns: 1fr;
+        -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        -ms-grid-columns: 1fr;
+    }
+    .chicago {
+        -ms-grid-column: 1;
+        -ms-grid-row: 1;
+    }
+    .seattle {
+        -ms-grid-column: 1;
+        -ms-grid-row: 2;
+    }
+    .brooklyn {
+        -ms-grid-column: 1;
+        -ms-grid-row: 3;
+    }
+    .portland {
+        -ms-grid-column: 1;
+        -ms-grid-row: 4;
+    }
+    .week {
+        -ms-grid-column: 1;
+        -ms-grid-row: 5;
+    }
+    .sanjose {
+        -ms-grid-column: 1;
+        -ms-grid-row: 6;
+    }
+}

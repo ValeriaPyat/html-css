@@ -1,0 +1,147 @@
+body {
+    font-family: Avenir Next, sans-serif;
+    background: url(imgs/back.png) no-repeat fixed;
+    background-size: cover;
+}
+
+.main-box {
+    background: url(imgs/shadow.png) center;
+    width: 800px;
+    height: 600px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    -ms-flex-line-pack: center;
+    color: white;
+    text-shadow: 1px 1px 2px grey;
+    text-transform: uppercase;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+.main-box__cube {
+    width: 205px;
+    height: 205px;
+    text-align: center;
+}
+
+.main-box__cube_img {
+    margin: 45px 0 10px 0;
+    filter: drop-shadow(1px 1px 1px grey);
+}
+
+.chicago img {
+    width: 90px;
+    height: 76px;
+}
+.seattle img {
+    width: 81px;
+    height: 74px;
+}
+.brooklyn img {
+    width: 87px;
+    height: 77px;
+}
+.portland img {
+    width: 86px;
+    height: 88px;
+}
+.sanjose img {
+    width: 88px;
+    height: 64px;
+    margin-bottom: 32px;
+}
+
+.week_gen img {
+    margin-top: 25px;
+    width: 63px;
+    height: 65px;
+}
+
+.week-info {
+    padding: 18px 0;
+}
+
+.week_smallimgs img {
+    width: 23px;
+    height: 20px;
+    margin: 12px 9px 0;
+}
+
+.week_smallimgs img:nth-child(3) {
+    width: 24px;
+    height: 18px;
+}
+
+.main-box__cube_text {
+    font-size: 16px;
+}
+
+.week_days__text {
+    font-size: 12px;
+    font-weight: bold;
+    display: inline;
+    margin: 0 8px;
+}
+
+.week_degreese p {
+    margin: 0 11px;
+}
+
+.chicago {
+    background-color: #06b3db;
+}
+.seattle {
+    background-color: #4ed486;
+}
+.brooklyn {
+    background-color: #6139f6;
+}
+.portland {
+    background-color: #e3b63d;
+}
+.week {
+    background-color: #b03153;
+}
+.week_gen {
+    background-color: #dc3d66;
+    height: 105px;;
+}
+.sanjose {
+    background-color: #bd54cd;
+}
+
+@media screen and (max-width: 800px) and (min-width: 637px){
+    .main-box {
+        width: 100%;
+        margin: auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
+
+@media screen and (max-width: 636px) {
+    .main-box {
+        width: 100%;
+        margin: 50px auto;
+        background: none;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .main-box {
+        width: 100%;
+        position: relative;
+        height: auto;
+        margin: 50px auto;
+        background: none;
+    }
+}
